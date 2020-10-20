@@ -33,7 +33,7 @@
 <div class="front-page">
     <h1>GeoGuessr</h1>
     <h3>
-        Helsinki-kartta <a href="https://talossa.github.io/geo/play#Helsinki">täällä</a>
+        unnin hostaama
     </h3>
     <p>kopioitu githubista <a href="https://github.com/locationestimatr">täältä</a></p>
     <div class="maps">
@@ -50,13 +50,23 @@
                 </div>
             </div>
             <div class="map">
+                <div class="map-background" style="background-image:url(data/thumbnails/world.jpg)"></div>
+                <div class="map-text">
+                    <div class="map-title">Helsinki</div>
+                    <div class="map-actions">
+                        <a href=./play#Helsinki class="map-play">Play</a>
+                        <a href=./highscore#Helsinki class="map-score">Scores</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
                 <div class="map-background" style="background-image:url(data/thumbnails/my_area.jpg)"></div>
                 <div class="map-text">
-                    <div class="map-title">Lähialue</div>
+                    <div class="map-title">My Area</div>
                     <div class="map-actions">
                         <label class="radius-picker">
                             <span>Radius</span>
-                            <input type="number" class="radius-input" value="10" placeholder="Radius in km">
+                            <input type="number" class="radius-input" value="5" placeholder="Radius in km">
                             <span>km</span>
                         </label>
                         <span class="clickable map-play" onmouseup="playMyArea(event)">Play</span>
